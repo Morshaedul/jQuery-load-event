@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Events of Submit</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>  
+        .div{ margin:5px;padding:2px; border:2px solid #666; width:60px;}</style> 
+</head>
+<body>
+    <img src="images/good-morning.jpg" alt="good morning">  
+<p><b>Note:</b> On some browsers, the load event did not trigger if the image is cached.</p>   
+    <script>  
+        $(document).ready(function(){  
+            $("img").load(function(){  
+                alert("Image loaded.");  
+            });  
+        });  
+        </script>   
+
+    <script src="js/index.js"></script>
+</body>
+</html>
